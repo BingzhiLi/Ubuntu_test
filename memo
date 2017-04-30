@@ -1,18 +1,35 @@
-1, install git and ssh
-2, git config --global user.name your_user_name   
-   git config --global user.email your_mail_adress
-   (git config --list)
-   (nano ~/.gitconfig)
-3, ssh-keygen -C your_mail_adress -t rsa
-   (press enter and then type your key password, the password will use later)
-   cd ~/.ssh/
-   cat id_rsa.pub
-   (print the key in the terminal)
-4, go to your github homepage and find setting/SSH and GPG keys/New SSH key/
-   set a name of the key and copy the text in id_rsa.pub file 
-5, back to ubuntu system
-   ssh -v git@github.com
-   (enter yes and then a window show up to ask your key password now enter your key password set in step 3)
-6, now your can use git in ubuntu system
 
+//config git
+
+1,  install git and ssh
+2,  git config --global user.name your_user_name   
+    git config --global user.email your_mail_adress
+    (git config --list)
+    (nano ~/.gitconfig)
+3,  ssh-keygen -C your_mail_adress -t rsa
+    (press enter and then type your key password, the password will use later)
+    cd ~/.ssh/
+    cat id_rsa.pub
+    (print the key in the terminal)
+4,  go to your github homepage and find setting/SSH and GPG keys/New SSH key/
+    set a name of the key and copy the text in id_rsa.pub file 
+5,  back to ubuntu system
+    ssh -v git@github.com
+    (enter yes and then a window show up to ask your key password now enter your key password set in step 3)
+6,  now your can use git in ubuntu system
+
+//create and manage repository
+
+7,  cd ~/git/your_new_repository
+    git init
+    (initial your repository)
+    gedit README 
+    (create and edit README file)
+    git add README
+    git status
+    (see the status of your repository)
+    git commit -m "your description of this commit"
+8,  git remote add origin https://github.com/your_user_name/your_repository.git
+    git push origin master
+    (push your change to the master branch, this step may request your user name and password)
 
