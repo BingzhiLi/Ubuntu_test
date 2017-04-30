@@ -55,4 +55,4 @@ git branch new_branch_you_want_create (create a new branch)
 git checkout branch_you_want_go (move to another branch)
 git checkout -b new_branch_you_want_create (combine previous 2 command together, create and move)
 git add . (add all the change)
-
+git log (check the history of commit)
