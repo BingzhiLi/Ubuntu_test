@@ -46,3 +46,13 @@
     git push origin master
     (commit the change to the github, you have to enter the user name and password)
 
+//some useful command
+
+git rm the_file_you_want_delete (delete file)
+git mv the_file_you_want_move new_location_you_want_store (move file)
+git status (see the status of the repository)
+git branch new_branch_you_want_create (create a new branch)
+git checkout branch_you_want_go (move to another branch)
+git checkout -b new_branch_you_want_create (combine previous 2 command together, create and move)
+git add . (add all the change)
+
