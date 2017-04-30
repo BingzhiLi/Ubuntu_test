@@ -18,7 +18,7 @@
     (enter yes and then a window show up to ask your key password now enter your key password set in step 3)
 6,  now your can use git in ubuntu system
 
-//create and manage repository
+//create a repository
 
 7,  cd ~/git/your_new_repository
     git init
@@ -32,4 +32,17 @@
 8,  git remote add origin https://github.com/your_user_name/your_repository.git
     git push origin master
     (push your change to the master branch, this step may request your user name and password)
+
+//commit changes for a exist repository
+
+9,  make some changes of a exist repository
+10, git status
+    (see which file is changed, can skip)
+    git add the_file_you_changed
+    git status
+    (see the status of the changed file, can skip)
+    git commit -m "your description of this change"
+    (apply the change locally)
+    git push origin master
+    (commit the change to the github, you have to enter the user name and password)
 
