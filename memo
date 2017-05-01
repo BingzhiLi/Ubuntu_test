@@ -29,7 +29,8 @@
     git status
     (see the status of your repository)
     git commit -m "your description of this commit"
-8,  git remote add origin https://github.com/your_user_name/your_repository.git
+8,  go to github and create a new repository named your_repository
+    git remote add origin https://github.com/your_user_name/your_repository.git
     git push origin master
     (push your change to the master branch, this step may request your user name and password)
 
